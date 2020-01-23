@@ -1,0 +1,212 @@
+{
+    "ESP.Animals.bActive": false,
+    "ESP.Animals.bChicken": false,
+    "ESP.Animals.bPig": false,
+    "ESP.Animals.bSnake": false,
+    "ESP.Legend.bActive": false,
+    "ESP.MenuTake.AllyColor": {
+        "0": 37,
+        "1": 138,
+        "2": 61,
+        "3": 255
+    },
+    "ESP.MenuTake.AnimalsChickens": false,
+    "ESP.MenuTake.AnimalsCommon": false,
+    "ESP.MenuTake.AnimalsLegendary": false,
+    "ESP.MenuTake.AnimalsMythical": false,
+    "ESP.MenuTake.AnimalsPigs": false,
+    "ESP.MenuTake.AnimalsRare": false,
+    "ESP.MenuTake.AnimalsSnakes": false,
+    "ESP.MenuTake.CaptainColor": {
+        "0": 168,
+        "1": 77,
+        "2": 47,
+        "3": 255
+    },
+    "ESP.MenuTake.ColorsLegend": false,
+    "ESP.MenuTake.Debug": false,
+    "ESP.MenuTake.Emerald": {
+        "0": 98,
+        "1": 222,
+        "2": 141,
+        "3": 255
+    },
+    "ESP.MenuTake.EnemyColor": {
+        "0": 166,
+        "1": 51,
+        "2": 51,
+        "3": 255
+    },
+    "ESP.MenuTake.EventsCloud": true,
+    "ESP.MenuTake.EventsFort": true,
+    "ESP.MenuTake.EventsReapers": true,
+    "ESP.MenuTake.ItemsBarrels": false,
+    "ESP.MenuTake.ItemsCages": false,
+    "ESP.MenuTake.ItemsCommon": true,
+    "ESP.MenuTake.ItemsHarpoonSupport": false,
+    "ESP.MenuTake.ItemsLegendary": true,
+    "ESP.MenuTake.ItemsMythical": true,
+    "ESP.MenuTake.ItemsOther": true,
+    "ESP.MenuTake.ItemsRare": true,
+    "ESP.MenuTake.ItemsUtility": true,
+    "ESP.MenuTake.LoreBooks": false,
+    "ESP.MenuTake.LoreColor": {
+        "0": 224,
+        "1": 133,
+        "2": 83,
+        "3": 255
+    },
+    "ESP.MenuTake.MapPins": true,
+    "ESP.MenuTake.ObjectsColor": {
+        "0": 87,
+        "1": 87,
+        "2": 87,
+        "3": 255
+    },
+    "ESP.MenuTake.ObjectsSiren": false,
+    "ESP.MenuTake.ObjectsStatues": true,
+    "ESP.MenuTake.ObjectsWrecks": true,
+    "ESP.MenuTake.PlayerAlly": true,
+    "ESP.MenuTake.PlayerEnemy": true,
+    "ESP.MenuTake.PlayerHPBar": true,
+    "ESP.MenuTake.PlayerItem": true,
+    "ESP.MenuTake.PlayerName": true,
+    "ESP.MenuTake.Ruby": {
+        "0": 222,
+        "1": 98,
+        "2": 98,
+        "3": 255
+    },
+    "ESP.MenuTake.Sapphire": {
+        "0": 98,
+        "1": 168,
+        "2": 222,
+        "3": 255
+    },
+    "ESP.MenuTake.ShipsAlly": true,
+    "ESP.MenuTake.ShipsEnemy": true,
+    "ESP.MenuTake.ShipsGhost": true,
+    "ESP.MenuTake.ShipsRowboat": false,
+    "ESP.MenuTake.Skeleton": true,
+    "ESP.MenuTake.SkeletonItem": true,
+    "ESP.MenuTake.SkeletonName": true,
+    "ESP.MenuTake.WaterMobs": false,
+    "ESP.Objects.bActive": false,
+    "ESP.Objects.colorObjects": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0
+    },
+    "ESP.Player.bActive": false,
+    "ESP.Player.bHealth": false,
+    "ESP.Player.bName": false,
+    "ESP.Player.bTeam": false,
+    "ESP.Player.bWeapon": false,
+    "ESP.Player.colorEnemy": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0
+    },
+    "ESP.Player.colorTeam": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0
+    },
+    "ESP.Ships.bActive": false,
+    "ESP.Ships.colorEnemy": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0
+    },
+    "ESP.Ships.colorTeam": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0
+    },
+    "ESP.Skeleton.bActive": false,
+    "ESP.Skeleton.bWeapon": false,
+    "ESP.Skeleton.colorSkeleton": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0
+    },
+    "ESP.Skeleton.colorSkeletonTT": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0
+    },
+    "ESP.Treasure.bActive": false,
+    "ESP.World.bFort": false,
+    "ESP.World.bIslands": false,
+    "ESP.World.bMapPins": false,
+    "ESP.World.bMermaid": false,
+    "ESP.World.bShipWreck": false,
+    "ESP.colorCommon": {
+        "0": 190,
+        "1": 190,
+        "2": 190,
+        "3": 255
+    },
+    "ESP.colorDKey": {
+        "0": 100,
+        "1": 45,
+        "2": 180,
+        "3": 255
+    },
+    "ESP.colorGhostShip": {
+        "0": 114,
+        "1": 166,
+        "2": 161,
+        "3": 255
+    },
+    "ESP.colorLegendary": {
+        "0": 230,
+        "1": 185,
+        "2": 25,
+        "3": 255
+    },
+    "ESP.colorMythical": {
+        "0": 150,
+        "1": 70,
+        "2": 225,
+        "3": 255
+    },
+    "ESP.colorOther": {
+        "0": 255,
+        "1": 255,
+        "2": 255,
+        "3": 255
+    },
+    "ESP.colorPins": {
+        "0": 207,
+        "1": 145,
+        "2": 255,
+        "3": 255
+    },
+    "ESP.colorRare": {
+        "0": 70,
+        "1": 157,
+        "2": 224,
+        "3": 255
+    },
+    "ESP.colorSpecial": {
+        "0": 209,
+        "1": 36,
+        "2": 99,
+        "3": 255
+    },
+    "ESP.colorWorld": {
+        "0": 225,
+        "1": 225,
+        "2": 225,
+        "3": 255
+    },
+    "GUI": true
+}
