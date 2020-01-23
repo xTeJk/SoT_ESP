@@ -1,5 +1,5 @@
 # SoT ESP
-Sea of Thieves - Advanced ESP
+Sea of Thieves - Advanced ESP  
 [![Discord](https://img.shields.io/discord/370909694056726528.svg?style=flat&logo=discord)](https://discord.gg/8wT3GEQ)
 
 
@@ -15,7 +15,7 @@ Sea of Thieves - Advanced ESP
 - Launch OffsetFinder.exe
 - Copy offsets into cheat directory
 
-## Current Offsets:
+## Current Offsets (23.01.2020):
 {  
     "AActor.HealthComponent": 2120,  
     "AActor.PlayerState": 1072,  
