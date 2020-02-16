@@ -1,6 +1,6 @@
 # SoT ESP
 Sea of Thieves - Advanced ESP  
-[![Discord](https://img.shields.io/discord/370909694056726528.svg?style=flat&logo=discord)](https://discord.gg/8wT3GEQ)
+[![Discord](https://img.shields.io/discord/370909694056726528.svg?style=flat&logo=discord)](https://discord.gg/jqbq85J)
 
 
 ## How to:
