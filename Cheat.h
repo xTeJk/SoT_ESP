@@ -139,7 +139,6 @@ class cCheat
 {
 public:
 	std::vector<Team>Crews;
-	bool bAnimals, bShips, bPlayers, bTreasure, bObjects, bLegend;
 public:
 	void readData();
 	void DrawString(const char * szString, float X, float Y, Color COLOR, bool Centered, std::string name);
