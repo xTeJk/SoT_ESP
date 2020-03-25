@@ -1,9 +1,4 @@
 {
-    "ESP.Animals.bActive": false,
-    "ESP.Animals.bChicken": false,
-    "ESP.Animals.bPig": false,
-    "ESP.Animals.bSnake": false,
-    "ESP.Legend.bActive": false,
     "ESP.MenuTake.AllyColor": {
         "0": 37,
         "1": 138,
@@ -91,63 +86,6 @@
     "ESP.MenuTake.SkeletonItem": true,
     "ESP.MenuTake.SkeletonName": true,
     "ESP.MenuTake.WaterMobs": false,
-    "ESP.Objects.bActive": false,
-    "ESP.Objects.colorObjects": {
-        "0": 0,
-        "1": 0,
-        "2": 0,
-        "3": 0
-    },
-    "ESP.Player.bActive": false,
-    "ESP.Player.bHealth": false,
-    "ESP.Player.bName": false,
-    "ESP.Player.bTeam": false,
-    "ESP.Player.bWeapon": false,
-    "ESP.Player.colorEnemy": {
-        "0": 0,
-        "1": 0,
-        "2": 0,
-        "3": 0
-    },
-    "ESP.Player.colorTeam": {
-        "0": 0,
-        "1": 0,
-        "2": 0,
-        "3": 0
-    },
-    "ESP.Ships.bActive": false,
-    "ESP.Ships.colorEnemy": {
-        "0": 0,
-        "1": 0,
-        "2": 0,
-        "3": 0
-    },
-    "ESP.Ships.colorTeam": {
-        "0": 0,
-        "1": 0,
-        "2": 0,
-        "3": 0
-    },
-    "ESP.Skeleton.bActive": false,
-    "ESP.Skeleton.bWeapon": false,
-    "ESP.Skeleton.colorSkeleton": {
-        "0": 0,
-        "1": 0,
-        "2": 0,
-        "3": 0
-    },
-    "ESP.Skeleton.colorSkeletonTT": {
-        "0": 0,
-        "1": 0,
-        "2": 0,
-        "3": 0
-    },
-    "ESP.Treasure.bActive": false,
-    "ESP.World.bFort": false,
-    "ESP.World.bIslands": false,
-    "ESP.World.bMapPins": false,
-    "ESP.World.bMermaid": false,
-    "ESP.World.bShipWreck": false,
     "ESP.colorCommon": {
         "0": 190,
         "1": 190,
