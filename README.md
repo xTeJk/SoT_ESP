@@ -10,7 +10,7 @@ Sea of Thieves - Advanced ESP
 - Start cheat
 
 ## Offsets:
-- Download: https://github.com/pubgsdk/SoT-SDK
+- Download: https://github.com/gummy8unny/SoT-SDK
 - Put OffsetFinder.exe in SDK directory
 - Launch OffsetFinder.exe
 - Copy offsets into cheat directory
