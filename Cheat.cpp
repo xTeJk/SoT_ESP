@@ -1093,8 +1093,6 @@ void cCheat::readData()
 			}
 		}
 
-#ifndef Ships
-
 		//SLOOP
 		else if (name.find("BP_SmallShipTemplate_C") != std::string::npos || name.find("BP_SmallShipNetProxy") != std::string::npos)
 		{
@@ -1311,7 +1309,6 @@ void cCheat::readData()
 				}
 		}
 
-#endif // !Ships
 		//SHIP WRECK
 		else if (name.find("BP_Shipwreck_") != std::string::npos)
 		{
