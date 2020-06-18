@@ -14,7 +14,7 @@ Sea of Thieves - Advanced ESP
 	- Includes +: `C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include`
 	- Libraries +: `C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x64`
 	- /Od disabled (default)
-- (Ready to compile source version for 2.0.14 is available to download in Releases)
+- (Ready to compile source version for 2.0.15 is available to download in Releases)
 - Compile as `Release x64` version
 
 ## Offsets:
@@ -23,7 +23,7 @@ Sea of Thieves - Advanced ESP
 - Launch OffsetFinder.exe
 - Copy offsets into cheat directory
 
-## Current Offsets (18.06.2020 / 2.0.14):
+## Current Offsets (18.06.2020 / 2.0.15):
 ```
 {
 	"AActor.HealthComponent": 2120,
