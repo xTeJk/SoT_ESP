@@ -123,7 +123,6 @@ void cCheat::readData()
 		//SKELETON
 		if (name.find("BP_Skeleton") != std::string::npos && name.find("Pawn") != std::string::npos)
 		{
-
 			auto pos = actor.GetRootComponent().GetPosition();
 			auto distance = SOT->localCamera.position.DistTo(pos) / 100.00f;
 
@@ -174,7 +173,6 @@ void cCheat::readData()
 		//AMMO CRATE
 		else if (name.find("Ammo") != std::string::npos)
 		{
-
 			auto pos = actor.GetRootComponent().GetPosition();
 			auto distance = SOT->localCamera.position.DistTo(pos) / 100.00f;
 
@@ -197,7 +195,6 @@ void cCheat::readData()
 		//LORE BOOK
 		else if (name.find("Lore") != std::string::npos || name.find("Tale") != std::string::npos)
 		{
-
 			auto pos = actor.GetRootComponent().GetPosition();
 			auto distance = SOT->localCamera.position.DistTo(pos) / 100.00f;
 
@@ -223,10 +220,42 @@ void cCheat::readData()
 				}
 		}
 
+		//GLORIUS SEA DOG CHEST
+		//ty throwaway666
+		else if (name.find("BP_RomeBeacon_") != std::string::npos)
+		{
+			auto pos = actor.GetRootComponent().GetPosition();
+			auto distance = SOT->localCamera.position.DistTo(pos) / 100.00f;
+
+			Color color = { Vars.ESP.colorSpecial[0],Vars.ESP.colorSpecial[1],Vars.ESP.colorSpecial[2],Vars.ESP.colorSpecial[3] };
+
+
+			Vector2 Screen;
+			if (Misc->WorldToScreen(pos, &Screen))
+				if (Vars.ESP.MenuTake.ItemsLegendary)
+				{
+					if ((int)distance < 10) {
+						DrawString("» • «", Screen.x, Screen.y, color, true, "dist_3");
+					}
+					else if ((int)distance < 5) {
+						DrawString("» • «", Screen.x, Screen.y, color, true, "dist_2");
+					}
+					else if ((int)distance < 2) {
+						DrawString("» • «", Screen.x, Screen.y, color, true, "dist_1");
+					}
+					else {
+						DrawString(std::string("Sea Dog Chest » " + std::to_string((int)distance) + "m").c_str(), Screen.x, Screen.y, color, true, "small");
+						if (Vars.ESP.MenuTake.ItemsHarpoonSupport)
+						{
+							DrawCircle(Screen.x, Screen.y, 3, 25, color);
+						}
+					}
+				}
+		}
+
 		//STORAGE BOX
 		else if (name.find("BP_MerchantCrate_AnyItemCrate_ItemInfo_C") != std::string::npos)
 		{
-
 			auto pos = actor.GetRootComponent().GetPosition();
 			auto distance = SOT->localCamera.position.DistTo(pos) / 100.00f;
 
@@ -259,7 +288,6 @@ void cCheat::readData()
 		//BARREL
 		else if (name.find("BP_BuoyantStorageBarrel_LockedToWater") != std::string::npos)
 		{
-
 			auto pos = actor.GetRootComponent().GetPosition();
 			auto distance = SOT->localCamera.position.DistTo(pos) / 100.00f;
 
@@ -292,7 +320,6 @@ void cCheat::readData()
 		//BOTTLE
 		else if (name.find("Bottle") != std::string::npos)
 		{
-
 			auto pos = actor.GetRootComponent().GetPosition();
 			auto distance = SOT->localCamera.position.DistTo(pos) / 100.00f;
 
@@ -317,10 +344,10 @@ void cCheat::readData()
 					}
 				}
 		}
+
 		//CAGE - CHICKEN
 		else if (Vars.ESP.MenuTake.ItemsCages && name.find("ChickenCrate") != std::wstring::npos)
 		{
-
 			auto pos = actor.GetRootComponent().GetPosition();
 			auto distance = SOT->localCamera.position.DistTo(pos) / 100.00f;
 
@@ -346,10 +373,10 @@ void cCheat::readData()
 					}
 				}
 		}
+
 		//CAGE - PIG
 		else if (Vars.ESP.MenuTake.ItemsCages && name.find("PigCrate") != std::wstring::npos)
 		{
-
 			auto pos = actor.GetRootComponent().GetPosition();
 			auto distance = SOT->localCamera.position.DistTo(pos) / 100.00f;
 
@@ -375,10 +402,10 @@ void cCheat::readData()
 					}
 				}
 		}
+
 		//CAGE - SNAKE
 		else if (Vars.ESP.MenuTake.ItemsCages && name.find("SnakeBasket") != std::wstring::npos)
 		{
-
 			auto pos = actor.GetRootComponent().GetPosition();
 			auto distance = SOT->localCamera.position.DistTo(pos) / 100.00f;
 
@@ -404,10 +431,10 @@ void cCheat::readData()
 					}
 				}
 		}
+
 		// MERCHANT - BANANA
 		else if (Vars.ESP.MenuTake.ItemsOther && name.find("BananaCrate") != std::wstring::npos)
 		{
-
 			auto pos = actor.GetRootComponent().GetPosition();
 			auto distance = SOT->localCamera.position.DistTo(pos) / 100.00f;
 
@@ -433,10 +460,10 @@ void cCheat::readData()
 					}
 				}
 		}
+
 		// MERCHANT - TEA
 		else if (Vars.ESP.MenuTake.ItemsOther && name.find("TeaCrate") != std::wstring::npos)
 		{
-
 			auto pos = actor.GetRootComponent().GetPosition();
 			auto distance = SOT->localCamera.position.DistTo(pos) / 100.00f;
 
@@ -462,10 +489,10 @@ void cCheat::readData()
 					}
 				}
 		}
+
 		// MERCHANT - SUGAR
 		else if (Vars.ESP.MenuTake.ItemsOther && name.find("SugarCrate") != std::wstring::npos)
 		{
-
 			auto pos = actor.GetRootComponent().GetPosition();
 			auto distance = SOT->localCamera.position.DistTo(pos) / 100.00f;
 
@@ -491,10 +518,10 @@ void cCheat::readData()
 					}
 				}
 		}
+
 		// COLLECTOR
 		else if (Vars.ESP.MenuTake.ItemsCommon && name.find("Collector") != std::wstring::npos && name.find("Ashen") == std::wstring::npos)
 		{
-
 			auto pos = actor.GetRootComponent().GetPosition();
 			auto distance = SOT->localCamera.position.DistTo(pos) / 100.00f;
 
@@ -520,10 +547,10 @@ void cCheat::readData()
 					}
 				}
 		}
+
 		// MERCHANT - SILK
 		else if (Vars.ESP.MenuTake.ItemsOther && name.find("BP_MerchantCrate_Commodity_SilkCrate_Proxy_C") != std::wstring::npos)
 		{
-
 			auto pos = actor.GetRootComponent().GetPosition();
 			auto distance = SOT->localCamera.position.DistTo(pos) / 100.00f;
 
@@ -549,10 +576,10 @@ void cCheat::readData()
 					}
 				}
 		}
+
 		// ASHEN CHEST
 		else if (Vars.ESP.MenuTake.ItemsLegendary && name.find("AshenCollector") != std::wstring::npos)
 		{
-
 			auto pos = actor.GetRootComponent().GetPosition();
 			auto distance = SOT->localCamera.position.DistTo(pos) / 100.00f;
 
@@ -578,10 +605,10 @@ void cCheat::readData()
 					}
 				}
 		}
+
 		// SPICE - SILK
 		else if (Vars.ESP.MenuTake.ItemsOther && name.find("BP_MerchantCrate_Commodity_SpiceCrate_Proxy_C") != std::wstring::npos)
 		{
-
 			auto pos = actor.GetRootComponent().GetPosition();
 			auto distance = SOT->localCamera.position.DistTo(pos) / 100.00f;
 
@@ -607,10 +634,10 @@ void cCheat::readData()
 					}
 				}
 		}
+
 		// MERCHANT - WOOD
 		else if (Vars.ESP.MenuTake.ItemsOther && name.find("BP_MerchantCrate_WoodCrateProxy_C") != std::wstring::npos)
 		{
-
 			auto pos = actor.GetRootComponent().GetPosition();
 			auto distance = SOT->localCamera.position.DistTo(pos) / 100.00f;
 
@@ -636,10 +663,10 @@ void cCheat::readData()
 					}
 				}
 		}
+
 		// MERCHANT - CANNONBALL
 		else if (Vars.ESP.MenuTake.ItemsOther && name.find("BP_MerchantCrate_CannonballCrateProxy") != std::wstring::npos)
 		{
-
 			auto pos = actor.GetRootComponent().GetPosition();
 			auto distance = SOT->localCamera.position.DistTo(pos) / 100.00f;
 
@@ -665,10 +692,10 @@ void cCheat::readData()
 					}
 				}
 		}
+
 		//HUMBLE GIFT
 		else if (Vars.ESP.MenuTake.ItemsLegendary && name.find("Gift") != std::wstring::npos)
 		{
-
 			auto pos = actor.GetRootComponent().GetPosition();
 			auto distance = SOT->localCamera.position.DistTo(pos) / 100.00f;
 
@@ -694,10 +721,10 @@ void cCheat::readData()
 					}
 				}
 		}
+
 		//GUNPOWDER
 		else if (Vars.ESP.MenuTake.ItemsUtility && name.find("Gunpowder") != std::wstring::npos)
 		{
-
 			auto pos = actor.GetRootComponent().GetPosition();
 			auto distance = SOT->localCamera.position.DistTo(pos) / 100.00f;
 
@@ -723,10 +750,10 @@ void cCheat::readData()
 					}
 				}
 		}
+
 		//DAMNED KEY
 		else if (name.find("BP_FotD_StrongholdKey") != std::string::npos || name.find("BP_FotD_StrongholdKey_Proxy") != std::string::npos)
 		{
-
 			auto pos = actor.GetRootComponent().GetPosition();
 			auto distance = SOT->localCamera.position.DistTo(pos) / 100.00f;
 			Color color = { Vars.ESP.colorDKey[0],Vars.ESP.colorDKey[1],Vars.ESP.colorDKey[2],Vars.ESP.colorDKey[3] };
@@ -748,10 +775,10 @@ void cCheat::readData()
 					}
 				}
 		}
+
 		// GEM
 		else if (Vars.ESP.MenuTake.ItemsRare && name.find("Gem") != std::wstring::npos)
 		{
-
 			auto pos = actor.GetRootComponent().GetPosition();
 			auto distance = SOT->localCamera.position.DistTo(pos) / 100.00f;
 
@@ -789,10 +816,10 @@ void cCheat::readData()
 					}
 				}
 		}
+
 		//CLOUD
 		else if (name.find("BP_SkellyShip_ShipCloud") != std::string::npos)
 		{
-
 			auto pos = actor.GetRootComponent().GetPosition();
 			auto distance = SOT->localCamera.position.DistTo(pos) / 100.00f;
 
@@ -823,7 +850,6 @@ void cCheat::readData()
 		//FOTD
 		else if (name.find("RitualSkullCloud") != std::string::npos)
 		{
-
 			auto pos = actor.GetRootComponent().GetPosition();
 			auto distance = SOT->localCamera.position.DistTo(pos) / 100.00f;
 
@@ -851,11 +877,9 @@ void cCheat::readData()
 				}
 		}
 
-
 		//FORT
 		else if (name.find("SkullCloud") != std::string::npos && name.find("Ritual") == std::string::npos)
 		{
-
 			auto pos = actor.GetRootComponent().GetPosition();
 			auto distance = SOT->localCamera.position.DistTo(pos) / 100.00f;
 
@@ -1024,7 +1048,6 @@ void cCheat::readData()
 		//PLAYERS
 		else if (name.find("BP_PlayerPirate_C") != std::string::npos)
 		{
-
 			auto pos = actor.GetRootComponent().GetPosition();
 			auto distance = SOT->localCamera.position.DistTo(pos) / 100.00f;
 
@@ -1096,7 +1119,6 @@ void cCheat::readData()
 		//SLOOP
 		else if (name.find("BP_SmallShipTemplate_C") != std::string::npos || name.find("BP_SmallShipNetProxy") != std::string::npos)
 		{
-
 			auto pos = actor.GetRootComponent().GetPosition();
 			auto distance = SOT->localCamera.position.DistTo(pos) / 100.00f;
 
@@ -1135,10 +1157,10 @@ void cCheat::readData()
 					DrawString(std::string("Own Sloop » " + std::to_string((int)distance) + "m").c_str(), Screen.x, Screen.y, color, true, "small");
 				}
 		}
+
 		//BRIGANTINE
 		else if (name.find("BP_MediumShipTemplate_C") != std::string::npos || name.find("BP_MediumShipNetProxy") != std::string::npos)
 		{
-
 			auto pos = actor.GetRootComponent().GetPosition();
 			auto distance = SOT->localCamera.position.DistTo(pos) / 100.00f;
 
@@ -1180,7 +1202,6 @@ void cCheat::readData()
 		//GALLEON
 		else if (name.find("BP_LargeShipTemplate_C") != std::string::npos || name.find("BP_LargeShipNetProxy") != std::string::npos)
 		{
-
 			auto pos = actor.GetRootComponent().GetPosition();
 			auto distance = SOT->localCamera.position.DistTo(pos) / 100.00f;
 
@@ -1220,9 +1241,8 @@ void cCheat::readData()
 				}
 		}
 		//ROWBOAT
-		else if (name.find("BP_Rowboat_C") != std::string::npos)
+		else if (name.find("BP_Rowboat_C") != std::string::npos || name.find("BP_RowboatRowingSeat_C") != std::string::npos || name.find("BP_Rowboat_WithFrontHarpoon_C") != string::npos)
 		{
-
 			auto pos = actor.GetRootComponent().GetPosition();
 			auto distance = SOT->localCamera.position.DistTo(pos) / 100.00f;
 
