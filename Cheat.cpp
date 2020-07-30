@@ -170,6 +170,56 @@ void cCheat::readData()
 			}
 		}
 
+		//ASHEN LORD SKELETON
+		if (name.find("BP_GiantSkeletonPawnBase_C") != std::string::npos)
+		{
+			auto pos = actor.GetRootComponent().GetPosition();
+			auto distance = SOT->localCamera.position.DistTo(pos) / 100.00f;
+
+			Vector2 Screen;
+			if (Misc->WorldToScreen(pos, &Screen))
+			{
+				Vector3 headPos = Vector3(pos.x, pos.y, pos.z + 100);
+
+				Vector2 ScreenTop;
+				Color boxColor = { Vars.ESP.MenuTake.CaptainColor[0],Vars.ESP.MenuTake.CaptainColor[1],Vars.ESP.MenuTake.CaptainColor[2],Vars.ESP.MenuTake.CaptainColor[3] };
+
+				if (Misc->WorldToScreen(headPos, &ScreenTop))
+				{
+					int hi = (Screen.y - ScreenTop.y) * 2;
+					int wi = hi * 0.65;
+
+					if (Vars.ESP.MenuTake.Skeleton)
+					{
+						DrawBox(ScreenTop.x - wi / 2, ScreenTop.y, wi, hi, boxColor);
+					}
+					if (Vars.ESP.MenuTake.SkeletonName)
+					{
+						if ((int)distance < 25) {
+							DrawString("» • «", Screen.x, Screen.y, boxColor, true, "dist_3");
+						}
+						else if ((int)distance < 15) {
+							DrawString("» • «", Screen.x, Screen.y, boxColor, true, "dist_2");
+						}
+						else if ((int)distance < 5) {
+							DrawString("» • «", ScreenTop.x, ScreenTop.y - 14, boxColor, true, "dist_1");
+						}
+						else {
+							DrawString(std::string("Ashen Lord » " + std::to_string((int)distance) + "m").c_str(), ScreenTop.x, ScreenTop.y - 14, boxColor, true, "small");
+						}
+					}
+					if (Vars.ESP.MenuTake.SkeletonItem)
+					{
+						auto ItemName = actor.GetWieldedItemComponent().GetWieldedItem().GetItemInfo().GetItemDesc().GetName();
+
+						if (ItemName.length() < 32)
+							DrawString(ItemName.c_str(), ScreenTop.x, ScreenTop.y + hi, boxColor, true, "small");
+					}
+
+				}
+			}
+		}
+
 		//AMMO CRATE
 		else if (name.find("Ammo") != std::string::npos)
 		{
@@ -847,6 +897,36 @@ void cCheat::readData()
 				}
 		}
 
+		//ASHEN SKULL / 2.0.17
+		else if (name.find("BP_AshenLord_SkullCloud_C") != std::string::npos)
+		{
+			auto pos = actor.GetRootComponent().GetPosition();
+			auto distance = SOT->localCamera.position.DistTo(pos) / 100.00f;
+
+			Color color = { Vars.ESP.colorWorld[0],Vars.ESP.colorWorld[1],Vars.ESP.colorWorld[2],Vars.ESP.colorWorld[3] };
+
+
+			Vector2 Screen;
+			if (Misc->WorldToScreen(pos, &Screen))
+				if (Vars.ESP.MenuTake.EventsFort)
+				{
+					if ((int)distance >= 1500)
+					{
+						DrawString(std::string("ASHEN SKULL » " + std::to_string((int)distance) + "m").c_str(), Screen.x, Screen.y, color, true, "small");
+					}
+					else if ((int)distance < 1500) {
+						DrawString(std::string("ASHEN SKULL » " + std::to_string((int)distance) + "m").c_str(), Screen.x, Screen.y, color, true, "small");
+					}
+					else if ((int)distance < 100) {
+						DrawString(std::string("ASHEN SKULL » " + std::to_string((int)distance) + "m").c_str(), Screen.x, Screen.y, color, true, "mini");
+					}
+					else
+					{
+						DrawString(std::string("ASHEN SKULL » " + std::to_string((int)distance) + "m").c_str(), Screen.x, Screen.y, color, true, "small");
+					}
+				}
+		}
+
 		//FOTD
 		else if (name.find("RitualSkullCloud") != std::string::npos)
 		{
@@ -1240,8 +1320,9 @@ void cCheat::readData()
 					DrawString(std::string("Own Galleon » " + std::to_string((int)distance) + "m").c_str(), Screen.x, Screen.y, color, true, "small");
 				}
 		}
+
 		//ROWBOAT
-		else if (name.find("BP_Rowboat_C") != std::string::npos || name.find("BP_RowboatRowingSeat_C") != std::string::npos || name.find("BP_Rowboat_WithFrontHarpoon_C") != string::npos)
+		else if (name.find("BP_Rowboat_C") != std::string::npos || name.find("BP_RowboatRowingSeat_C") != std::string::npos || name.find("BP_Rowboat_WithFrontHarpoon_C") != std::string::npos)
 		{
 			auto pos = actor.GetRootComponent().GetPosition();
 			auto distance = SOT->localCamera.position.DistTo(pos) / 100.00f;

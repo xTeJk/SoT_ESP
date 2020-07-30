@@ -30,7 +30,7 @@ void cDrawing::Draw()
 		colors[counter] += 0.05f;
 	}
 	//
-	String(std::string("SEA OF TAKE - 2.0.16").c_str(), 10, Process->Size[1] - 20, D3DCOLOR_XRGB(163, 116, 219), false, "small");
+	String(std::string("SEA OF TAKE - 2.0.17").c_str(), 10, Process->Size[1] - 20, D3DCOLOR_XRGB(163, 116, 219), false, "small");
 
 	if (Vars.ESP.MenuV2.MenuActive)
 		String(std::string("HOME » Shown » Menu").c_str(), 135, Process->Size[1] - 20, D3DCOLOR_XRGB(61, 168, 71), false, "small");
