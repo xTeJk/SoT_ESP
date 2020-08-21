@@ -114,28 +114,26 @@ private:
 
 enum EBootyTypes
 {
+	// sdk -> sot_athena_structs.hpp
 	EBootyTypes__Invalid = 0,
-	EBootyTypes__TreasureChest = 1,
-	EBootyTypes__BountySkull = 2,
-	EBootyTypes__MerchantCrate = 3,
-	EBootyTypes__GunpowderBarrel = 4,
-	EBootyTypes__TreasureArtifact = 5,
-	EBootyTypes__AncientChest = 6,
-	EBootyTypes__PirateLordBooty = 7,
-	EBootyTypes__BoxOfSecrets = 8,
-	EBootyTypes__CargoRunCrate = 9,
-	EBootyTypes__MermaidGem = 10,
-	EBootyTypes__CollectorsChest = 11,
-	EBootyTypes__DroppedPouch = 12,
-	EBootyTypes__FishedItem = 13,
-	EBootyTypes__Food = 14,
-	EBootyTypes__TaleArtifact = 15,
-	EBootyTypes__CampaignBooty = 16,
-	EBootyTypes__ReapersBooty = 17,
-	EBootyTypes__RitualSkull = 18,
-	EBootyTypes__AshenBooty = 19,
-	EBootyTypes__AshenGift = 20,
-	EBootyTypes__EBootyTypes_MAX = 21
+	EBootyTypes__BountySkull = 1,
+	EBootyTypes__MerchantCrate = 2,
+	EBootyTypes__GunpowderBarrel = 3,
+	EBootyTypes__AncientChest = 4,
+	EBootyTypes__PirateLordBooty = 5,
+	EBootyTypes__BoxOfSecrets = 6,
+	EBootyTypes__MermaidGem = 7,
+	EBootyTypes__CollectorsChest = 8,
+	EBootyTypes__DroppedPouch = 9,
+	EBootyTypes__Food = 10,
+	EBootyTypes__TaleArtifact = 11,
+	EBootyTypes__CampaignBooty = 12,
+	EBootyTypes__ReapersBounty = 13,
+	EBootyTypes__RitualSkull = 14,
+	EBootyTypes__AshenBooty = 15,
+	EBootyTypes__EmissaryFlotsam = 16,
+	EBootyTypes__GoldMound = 17,
+	EBootyTypes__EBootyTypes_MAX = 18
 };
 
 
