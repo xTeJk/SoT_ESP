@@ -402,7 +402,7 @@ public:
 	Vector3 GetCameraRotation();
 	float	GetCameraFOV();
 private:
-	char __pad0x0[0x490];
+	char __pad0x0[0x4E0]; // 2.0.17.2 / credit: shynd <3
 	Vector3 position;
 	Vector3 rotation;
 	char __pad0x10[0x10];
