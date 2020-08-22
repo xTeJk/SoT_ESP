@@ -175,7 +175,7 @@ UCrewOwnershipComponent AShip::GetCrewOwnershipComponent()
 
 uintptr_t AShip::GetOwningActor()
 {
-	return *(uintptr_t*)(__pad0x0 + 0x410);
+	return *(uintptr_t*)(__pad0x0 + 0x468); //2.0.17.2
 }
 
 TArray<struct FXMarksTheSpotMapMark> AXMarksTheSpotMap::GetMarks()
