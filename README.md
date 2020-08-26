@@ -1,6 +1,6 @@
 # SoT ESP
 Sea of Thieves - Advanced ESP - 2.0.17.2  
-[![Discord](https://discordapp.com/api/guilds/370909694056726528/widget.png?style=shield)](https://discord.gg/jqbq85J)
+[![Discord](https://discordapp.com/api/guilds/748288505507217428/widget.png?style=shield)](https://discord.gg/AEfuvwT) 
   
   
 ## How to:
